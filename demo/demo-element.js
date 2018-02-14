@@ -25,13 +25,8 @@ class DemoElement extends Element {
         let id = e.detail.id;
         afterNextRender(this, () => {
             let smoothie = this.$[id];
-            let tsOptions = {
-                "strokeStyle": "rgba(0, 255, 0, 1)",
-                "fillStyle": "rgba(0, 0, 0, 0.0)",
-                "lineWidth": 1
-            };
 
-            // Data
+            // Add time-series data to the chart
             let line1 = smoothie.newTimeSeries({
                     "strokeStyle": "rgba(0, 255, 0, 1)",
                     "fillStyle": "rgba(0, 0, 0, 0.0)",
@@ -49,9 +44,6 @@ class DemoElement extends Element {
               line2.append(new Date().getTime(), 100*Math.random());
             }, 1000);
 
-            // Add to SmoothieChart
-            smoothie.addTimeSeries(line1);
-            smoothie.addTimeSeries(line2);
         });
     }
 
