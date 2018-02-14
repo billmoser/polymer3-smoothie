@@ -1,0 +1,25 @@
+{
+  "name": "polymer3-smoothie",
+  "version": "1.0.0",
+  "flat": false,
+  "description": "Polymer 3 wrapper for SmoothieCharts",
+  "main": "index.html",
+  "repository": "https://github.com/billmoser/polymer3-smoothie.git",
+  "author": "William Moser <bill@playmusically.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@polymer/polymer": "^3.0.0-pre.9",
+    "smoothie": "^1.34.0"
+  },
+  "devDependencies": {
+    "@polymer/font-roboto": "^3.0.0-pre.1",
+    "@polymer/iron-component-page": "^3.0.0-pre.8",
+    "@polymer/iron-demo-helpers": "^3.0.0-pre.1",
+    "@polymer/iron-flex-layout": "^3.0.0-pre.1",
+    "@polymer/marked-element": "^3.0.0-pre.1",
+    "@polymer/prism-element": "^3.0.0-pre.1",
+    "@webcomponents/webcomponentsjs": "^1.0.20",
+    "marked": "^0.3.12",
+    "prismjs": "^1.11.0"
+  }
+}

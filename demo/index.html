@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+    <title>image-carousel demo</title>
+
+    <script type="module" src="../node_modules/@webcomponentsjs/webcomponentsjs/webcomponents-lite.js"></script>
+    <script src="../node_modules/smoothie/smoothie.js"></script>
+    <script type="module" src="../node_modules/@polymer/iron-demo-helpers/demo-pages-shared-styles.js"></script>
+    <script type="module" src="../node_modules/@polymer/iron-demo-helpers/demo-snippet.js"></script>
+    <script type="module" src="../node_modules/@polymer/polymer/lib/elements/custom-style.js"></script>
+
+    <script type="module" src="./demo-element.js"></script>
+
+    <custom-style>
+      <style is="custom-style" include="demo-pages-shared-styles">
+        demo-element:nth-child(odd) {
+          display: none;
+        }
+      </style>
+    </custom-style>
+  </head>
+  <body>
+    <div class="vertical-section-container centered">
+      <h3>Basic PolymerSmoothie demo</h3>
+      <demo-snippet>
+        <template>
+          <demo-element></demo-element>
+        </template>
+        <dom-bind>
+          <template>
+            <demo-element></demo-element>
+          </template>
+        </dom-bind>
+        <div></div>
+      </demo-snippet>
+    </div>
+
+  </body>
+</html>
