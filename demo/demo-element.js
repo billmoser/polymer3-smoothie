@@ -2,6 +2,12 @@ import { Element, html } from '../node_modules/@polymer/polymer/polymer-element.
 import { afterNextRender } from '../node_modules/@polymer/polymer/lib/utils/render-status.js';
 import '../polymer-smoothie.js';
 
+/**
+ * Demonstrates use of 
+ *      <polymer-smoothie>
+ *
+ *  @demo demo/index.html
+ */
 class DemoElement extends Element {
     static get template() { 
         return html `

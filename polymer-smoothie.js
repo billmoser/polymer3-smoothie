@@ -1,6 +1,11 @@
 import { Element, html } from '../node_modules/@polymer/polymer/polymer-element.js';
 import { template } from './polymer-smoothie_template.js';
 
+/**
+ *  Wrapper for SmoothieCharts real-time graphing library (http://smoothiecharts.org)
+ *
+ *  @demo demo/index.html
+ */
 class PolymerSmoothie extends Element {
     static get template() { return html([`${template}`]); }
     static get is() { return 'polymer-smoothie'; }
