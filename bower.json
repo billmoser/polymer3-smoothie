@@ -1,0 +1,17 @@
+{
+  "name": "image-carousel",
+  "main": "image-carousel.html",
+  "version": "1.0.6",
+  "dependencies": {},
+  "devDependencies": {
+    "web-component-tester": "Polymer/web-component-tester#^6.0.0",
+    "webcomponentsjs": "webcomponents/webcomponentsjs#^1.0.0"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
