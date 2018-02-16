@@ -1,6 +1,6 @@
 {
-  "name": "image-carousel",
-  "main": "image-carousel.html",
+  "name": "polymer3-smoothie",
+  "main": "polymer3-smoothie.js",
   "version": "1.0.6",
   "dependencies": {},
   "devDependencies": {

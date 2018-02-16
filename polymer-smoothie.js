@@ -1,4 +1,4 @@
-import { Element, html } from '../node_modules/@polymer/polymer/polymer-element.js';
+import { Element, html } from '../../@polymer/polymer/polymer-element.js';
 import { template } from './polymer-smoothie_template.js';
 
 /**
@@ -21,7 +21,7 @@ import { template } from './polymer-smoothie_template.js';
  *  @polymer
  *  @demo demo/index.html
  */
-class PolymerSmoothie extends Element {
+export class PolymerSmoothie extends Element {
     static get template() { return html([`${template}`]); }
     static get is() { return 'polymer-smoothie'; }
 
