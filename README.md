@@ -9,21 +9,21 @@
 
 1. You'll need to install some command-line tools to manage dependencies and to run the demo. See the [full installation instructions on the Polymer website](https://www.polymer-project.org/2.0/docs/tools/polymer-cli).
 
-3.  Clone this repo:
+2.  Clone this repo:
 
         https://github.com/billmoser/polymer3-smoothie.git
 
-4.  Change directory to your local repo and install dependencies:
+3.  Change directory to your local repo and install dependencies:
 
         cd polymer3-smoothie
         yarn install
         
-5. At the moment, this element is built on Polymer 3.0 preview, which still has a few issues.
+4. At the moment, this element is built on Polymer 3.0 preview, which still has a few issues.
    tests are failing due to an issue with lodash, and in order to use the element, you'll need to rename a directory in node_modules after the install:
 
         mv node_modules/prismjs node_modules/prism
 
-6.  To preview your element, run the Polymer development server from the repo directory:
+5.  To preview your element, run the Polymer development server from the repo directory:
 
         polymer serve --npm
         
