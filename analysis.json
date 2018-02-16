@@ -2,22 +2,22 @@
   "schema_version": "1.0.0",
   "elements": [
     {
-      "description": "Wrapper for SmoothieCharts real-time graphing library (http://smoothiecharts.org)",
+      "description": "Wrapper for SmoothieCharts real-time graphing library (http://smoothiecharts.org)\n\n #### Example\n      <polymer-smoothie id=\"chart\" \n          on-connected=\"_onConnected\"\n          delay=\"33\"\n          canvas='{\"width\": 560, \"height\": 200}'\n          config='{\n              \"maxValue\": 100,\n              \"minValue\": 0,\n              \"grid\": { \"strokeStyle\": \"rgb(125, 0, 0)\", \"fillStyle\": \"rgb(60, 0, 0)\",\n              \"lineWidth\": 1, \"millisPerLine\": 250, \"verticalSections\": 6 },\n              \"labels\": { \"fillStyle\": \"rgb(255, 255, 255)\" }}'>\n      </polymer-smoothie>",
       "summary": "",
       "path": "polymer-smoothie.js",
       "properties": [
         {
           "name": "canvas",
           "type": "Object",
-          "description": "",
+          "description": "The canvas containing the chart.",
           "privacy": "public",
           "sourceRange": {
             "start": {
-              "line": 14,
+              "line": 30,
               "column": 12
             },
             "end": {
-              "line": 14,
+              "line": 30,
               "column": 26
             }
           },
@@ -28,15 +28,15 @@
         {
           "name": "chart",
           "type": "Object",
-          "description": "",
+          "description": "The smoothie chart.  This can be directly manipulated using the\napi described at http://smoothiecharts.org",
           "privacy": "public",
           "sourceRange": {
             "start": {
-              "line": 15,
+              "line": 35,
               "column": 12
             },
             "end": {
-              "line": 15,
+              "line": 35,
               "column": 25
             }
           },
@@ -47,15 +47,15 @@
         {
           "name": "config",
           "type": "Object",
-          "description": "",
+          "description": "The chart's configuration, a JSON string",
           "privacy": "public",
           "sourceRange": {
             "start": {
-              "line": 16,
+              "line": 39,
               "column": 12
             },
             "end": {
-              "line": 19,
+              "line": 42,
               "column": 13
             }
           },
@@ -67,15 +67,15 @@
         {
           "name": "delay",
           "type": "number",
-          "description": "",
+          "description": "The charts delay.  For smoothing purposes -- see the original\napi docs for more information.",
           "privacy": "public",
           "sourceRange": {
             "start": {
-              "line": 20,
+              "line": 47,
               "column": 12
             },
             "end": {
-              "line": 23,
+              "line": 50,
               "column": 13
             }
           },
@@ -88,15 +88,15 @@
       "methods": [
         {
           "name": "connectedCallback",
-          "description": "",
+          "description": "Create the chart amnd dispatch `connected` event with\n`detail: {id: this.id}` to indicate the event source",
           "privacy": "public",
           "sourceRange": {
             "start": {
-              "line": 27,
+              "line": 60,
               "column": 4
             },
             "end": {
-              "line": 37,
+              "line": 70,
               "column": 5
             }
           },
@@ -105,15 +105,15 @@
         },
         {
           "name": "newTimeSeries",
-          "description": "",
+          "description": "Create a new time series object, and add it to the chart.",
           "privacy": "public",
           "sourceRange": {
             "start": {
-              "line": 39,
+              "line": 79,
               "column": 4
             },
             "end": {
-              "line": 43,
+              "line": 83,
               "column": 5
             }
           },
@@ -122,19 +122,23 @@
             {
               "name": "style"
             }
-          ]
+          ],
+          "return": {
+            "type": "Object",
+            "desc": "The new `TimeSeries` object."
+          }
         },
         {
           "name": "chartOptions",
-          "description": "",
+          "description": "Specify configuratuion options for the chart.",
           "privacy": "public",
           "sourceRange": {
             "start": {
-              "line": 45,
+              "line": 90,
               "column": 4
             },
             "end": {
-              "line": 49,
+              "line": 94,
               "column": 5
             }
           },
@@ -156,11 +160,11 @@
       "metadata": {},
       "sourceRange": {
         "start": {
-          "line": 8,
+          "line": 23,
           "column": 0
         },
         "end": {
-          "line": 51,
+          "line": 96,
           "column": 1
         }
       },
@@ -170,14 +174,14 @@
       "attributes": [
         {
           "name": "canvas",
-          "description": "",
+          "description": "The canvas containing the chart.",
           "sourceRange": {
             "start": {
-              "line": 14,
+              "line": 30,
               "column": 12
             },
             "end": {
-              "line": 14,
+              "line": 30,
               "column": 26
             }
           },
@@ -186,14 +190,14 @@
         },
         {
           "name": "chart",
-          "description": "",
+          "description": "The smoothie chart.  This can be directly manipulated using the\napi described at http://smoothiecharts.org",
           "sourceRange": {
             "start": {
-              "line": 15,
+              "line": 35,
               "column": 12
             },
             "end": {
-              "line": 15,
+              "line": 35,
               "column": 25
             }
           },
@@ -202,14 +206,14 @@
         },
         {
           "name": "config",
-          "description": "",
+          "description": "The chart's configuration, a JSON string",
           "sourceRange": {
             "start": {
-              "line": 16,
+              "line": 39,
               "column": 12
             },
             "end": {
-              "line": 19,
+              "line": 42,
               "column": 13
             }
           },
@@ -218,14 +222,14 @@
         },
         {
           "name": "delay",
-          "description": "",
+          "description": "The charts delay.  For smoothing purposes -- see the original\napi docs for more information.",
           "sourceRange": {
             "start": {
-              "line": 20,
+              "line": 47,
               "column": 12
             },
             "end": {
-              "line": 23,
+              "line": 50,
               "column": 13
             }
           },
@@ -233,7 +237,14 @@
           "type": "number"
         }
       ],
-      "events": [],
+      "events": [
+        {
+          "type": "CustomEvent",
+          "name": "connected",
+          "description": "connected",
+          "metadata": {}
+        }
+      ],
       "styling": {
         "cssVariables": [],
         "selectors": []
