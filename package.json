@@ -1,5 +1,5 @@
 {
-  "name": "polymer3-smoothie",
+  "name": "@billmoser/polymer3-smoothie",
   "version": "1.0.0",
   "flat": true,
   "description": "Polymer 3 wrapper for SmoothieCharts",
